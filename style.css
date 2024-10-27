@@ -689,3 +689,15 @@ body {
     opacity: 0;
   }
 }
+
+.conditional-margin {
+  line-height: 1.1;
+  margin-top: 0; /* Default for mobile */
+}
+
+@media (min-width: 768px) {
+  /* Adjust breakpoint as needed */
+  .conditional-margin {
+    margin-top: -4rem;
+  }
+}
