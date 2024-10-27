@@ -39,6 +39,12 @@
     />
   </head>
   <body>
+    <!-- Toast Message -->
+    <div id="toast">
+      <i class="fa-solid fa-check-circle" style="font-size: 1.2rem"></i>
+      <span>Your message has been sent successfully!</span>
+    </div>
+
     <!-- Navigation Bar -->
     <header id="navbar">
       <nav class="navbar navbar-expand-lg">
@@ -160,23 +166,27 @@
             <div
               class="col-lg-8 col-md-12 mt-0 d-flex align-content-start justify-content-start para-1"
             >
-              <p style="line-height: 1.1" class="aboutus-para">
-                I am Mohit Jaiswal, a Final year B.Tech Student pursuing
-                Computer Engineering at MIT Academy of Engineering, Pune, India.
-                A passionate Full Stack (MERN) Developer with a strong
-                background in creating and implementing innovative web
-                applications.Proficient in UI/UX design, I thrive in dynamic and
-                collaborative environments, leveraging my expertise in both
-                front-end and back-endtechnologies, as well as AWS and DevOps,
-                to deliver exceptional results and user-centric solutions.
+              <p
+                style="line-height: 1.1; margin-top: -4rem"
+                class="aboutus-para"
+              >
+                I am a Full Stack Developer with extensive experience in
+                front-end development using Angular, TypeScript, and Tailwind
+                CSS and back-end skills in Node.js. I am proficient in AWS
+                services (including IAM, EC2, VPC, S3, Lambda, API Gateway, SNS,
+                DynamoDB, RDS) and DevOps tools like Docker and Kubernetes,
+                which enhance my workflows and enable efficient, scalable
+                deployments. I have worked with technologies such as Angular,
+                TailwindCSS and also implementing centralized state management
+                with NgRx.
                 <br />
                 <br />
-                I am open to project collaborations and work opportunities where
-                I can contribute and learn from experienced professionals. I
-                believe in the power of teamwork and enjoy working in diverse,
-                collaborative environments. I am learning and solving problems
-                on DSA on a regular basis and actively participating in
-                extracurricular activities and coding events.
+                I am enthusiastic about project collaborations and work
+                opportunities where I can contribute effectively and learn from
+                skilled professionals. My technical expertise, combined with a
+                passion for continuous learning (including DSA problem-solving
+                and coding events), ensures that I stay updated and deliver
+                user-focused, innovative solutions.
               </p>
             </div>
           </div>
@@ -366,6 +376,7 @@
                   </h1>
                   <div class="card-title para-1">JavaScript</div>
                 </div>
+                <!-- React.js -->
                 <div
                   class="card d-flex justify-content-center align-items-center skills-cards"
                   style="width: 12rem; height: 10rem; border-radius: 20px"
@@ -378,6 +389,40 @@
                     />
                   </h1>
                   <div class="card-title para-1">React JS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row mt-lg-3 d-flex align-items-center justify-content-center"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <div
+              class="col-lg-4 col-sm-6 text-center mt-3 d-flex justify-content-evenly align-items-center"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center col-lg-12 gap-2 gap-lg-4"
+              >
+                <!-- Angular -->
+                <div
+                  class="card d-flex justify-content-center align-items-center skills-cards"
+                  style="
+                    width: 12rem;
+                    height: 10rem;
+                    border-radius: 20px;
+                    margin-right: 7px;
+                  "
+                >
+                  <h1 class="mt-3">
+                    <img
+                      src="./Images/Skills Logo/Angular.png"
+                      alt="HTML"
+                      height="100"
+                    />
+                  </h1>
+                  <div class="card-title para-1">Angular</div>
                 </div>
               </div>
             </div>
@@ -472,30 +517,12 @@
               >
                 <h1 class="mt-3">
                   <img
-                    src="./Images/Skills Logo/AWS2.png"
+                    src="./Images/Skills Logo/AWS.png"
                     alt="AWS"
                     height="100"
                   />
                 </h1>
                 <div class="card-title para-1">AWS</div>
-              </div>
-            </div>
-            <!-- Ansible -->
-            <div
-              class="col-lg-4 col-md-12 text-center mt-3 d-flex justify-content-center align-items-center"
-            >
-              <div
-                class="card d-flex justify-content-center align-items-center skills-cards"
-                style="width: 12rem; height: 10rem; border-radius: 20px"
-              >
-                <h1 class="mt-3">
-                  <img
-                    src="./Images/Skills Logo/Ansible.jpg"
-                    alt="Ansible"
-                    height="100"
-                  />
-                </h1>
-                <div class="card-title para-1">Ansible</div>
               </div>
             </div>
             <!-- Docker -->
@@ -616,7 +643,7 @@
               <div
                 class="d-flex justify-content-center align-items-center col-lg-12 gap-2 gap-lg-5"
               >
-                <!-- VS Code -->
+                <!-- Postman -->
                 <div
                   class="card d-flex justify-content-center align-items-center skills-cards"
                   style="width: 12rem; height: 10rem; border-radius: 20px"
@@ -694,13 +721,10 @@
                         alt=""
                         style="height: 50px; width: 50px"
                       />
-                      <!-- <img src="./Images/Skills Logo/AWS.png" alt="" style="height: 50px; width: 50px;" class="mx-2"> -->
                     </div>
                   </h3>
                   <p class="card-text para-2 text-start">
                     Developed a CI/CD pipeline for AWS deployment
-                    <!-- and management using CloudFormation templates, featuring
-                    scripts for IaC and CI/CD. -->
                   </p>
                   <div
                     class="row flex justify-content-center align-items-center"
@@ -790,7 +814,6 @@
                         style="height: 50px; width: 45px"
                         class="mx-2"
                       />
-                      <!-- <img src="./Images/Skills Logo/AWS.png" alt="" style="height: 50px; width: 50px;" class="mx-2"> -->
                     </div>
                   </h3>
                   <p class="card-text para-2 text-start">
@@ -820,7 +843,7 @@
                     </div>
                     <div class="col-lg-6 cols-md-6 cols-sm-12">
                       <a
-                        href="./projects/petcare.html"
+                        href="https://github.com/mohitjaiswal28/petCare-V1"
                         class="main-btn mb-2"
                         style="text-decoration: none"
                         target="_blank"
@@ -829,205 +852,8 @@
                             text-decoration: underline;
                             text-underline-offset: 4px;
                           "
-                          >More</span
-                        >
-                        <i class="fa-solid fa-circle-info"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Mini Projects -->
-    <section id="miniprojects">
-      <div class="container-fluid px-0">
-        <div class="container mb-md-0 mt-5">
-          <h1 class="heading-text p-text">Mini Projects</h1>
-          <div
-            class="row mt-lg-2 d-flex align-items-center justify-content-around"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="500"
-          >
-            <div
-              class="col-lg-4 col-md-12 text-center mt-3"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="500"
-            >
-              <div class="card contact-cards" style="border-radius: 20px">
-                <div class="card-body">
-                  <h5
-                    class="card-title project-text text-start"
-                    style="font-size: 2rem; margin-bottom: 1.5rem"
-                  >
-                    <img
-                      src="./Images/Skills Logo/Tailwind.png"
-                      alt="Facebook Login Clone"
-                      height="50"
-                      style="filter: saturate(1.3)"
-                      class="mx-2"
-                    />Facebook Login Clone
-                  </h5>
-                  <img
-                    class="card-img-top aboutus-cards mb-4 project-img"
-                    src="./Images/Projects/Facebook Clone.png"
-                    alt="Facebook Login Clone"
-                    height="200"
-                    style="
-                      max-width: 100%;
-                      min-height: 100%;
-                      height: auto;
-                      filter: saturate(1.1);
-                    "
-                  />
-                  <h3
-                    class="para-2 mb-4 px-lg-1 py-3 project-domain"
-                    style="
-                      color: white;
-                      border: 1px solid white;
-                      border-radius: 10px;
-                      font-size: 1.4rem;
-                    "
-                  >
-                    <div class="flex justify-content-center align-items-center">
-                      <img
-                        src="./Images/Skills Logo/HTML.png"
-                        alt=""
-                        style="height: 50px; width: 50px"
-                      />
-                      <img
-                        src="./Images/Skills Logo/CSS.png"
-                        alt=""
-                        style="height: 50px; width: 50px"
-                        class="mx-4"
-                      />
-                      <img
-                        src="./Images/Skills Logo/Tailwind.png"
-                        alt=""
-                        style="height: 50px; width: 50px"
-                        class="mx-1"
-                      />
-                      <img
-                        src="./Images/Skills Logo/GitHub.png"
-                        alt=""
-                        style="height: 50px; width: 50px"
-                        class="mx-2"
-                      />
-                    </div>
-                  </h3>
-                  <p class="card-text para-2 text-start">
-                    Revolutionize user authentication with our Facebook Login
-                    Clone. Immerse in a seamless, modern interface powered by
-                    Tailwind CSS, ensuring an intuitive user experience. It is
-                    for practising my UI/UX skills.
-                  </p>
-                  <div
-                    class="row flex justify-content-center align-items-center"
-                  >
-                    <div class="col-lg-12 cols-md-12 cols-sm-12">
-                      <a
-                        href="https://github.com/mohitjaiswal28/Facebook-Login-Clone-Using-TailwindCSS-Responsive"
-                        class="main-btn mb-2"
-                        style="text-decoration: none"
-                        target="_blank"
-                        ><span
-                          style="
-                            text-decoration: underline;
-                            text-underline-offset: 4px;
-                          "
-                          >GitHub
-                        </span>
+                        ></span>
                         <i class="fa-brands fa-github"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-12 text-center mt-3"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="500"
-            >
-              <div class="card contact-cards" style="border-radius: 20px">
-                <div class="card-body">
-                  <h5
-                    class="card-title project-text text-start"
-                    style="font-size: 2rem; margin-bottom: 1.5rem"
-                  >
-                    <img
-                      src="./Images/Skills Logo/NPM.png"
-                      alt="Facebook Login Clone"
-                      height="50"
-                      style="filter: saturate(1.3)"
-                      class="mx-2"
-                    />mohitjaiswal - NPM
-                  </h5>
-                  <img
-                    class="card-img-top aboutus-cards mb-4 project-img"
-                    src="./Images/Projects/NPM.png"
-                    alt="Facebook Login Clone"
-                    height="200"
-                    style="
-                      max-width: 100%;
-                      min-height: 100%;
-                      height: auto;
-                      filter: saturate(1.1);
-                    "
-                  />
-                  <h3
-                    class="para-2 mb-4 px-lg-1 py-3 project-domain"
-                    style="
-                      color: white;
-                      border: 1px solid white;
-                      border-radius: 10px;
-                      font-size: 1.4rem;
-                    "
-                  >
-                    <div class="flex justify-content-center align-items-center">
-                      <img
-                        src="./Images/Skills Logo/NodeJS.png"
-                        alt=""
-                        style="height: 50px; width: 45px"
-                      />
-                      <img
-                        src="./Images/Skills Logo/NPM.png"
-                        alt=""
-                        style="height: 50px; width: 50px"
-                        class="mx-4"
-                      />
-                    </div>
-                  </h3>
-                  <p class="card-text para-2 text-start">
-                    Now it is easier to connect with me - you can do it right
-                    from your terminal using npm packages!
-                    <br />
-                    Introducing "mohitjaiswal" - a simple npm package to access
-                    my public profiles. Let's connect and collaborate with ease!
-                  </p>
-                  <div
-                    class="row flex justify-content-center align-items-center"
-                  >
-                    <div class="col-lg-12 cols-md-12 cols-sm-12">
-                      <a
-                        href="https://github.com/mohitjaiswal28/mohitjaiswal-npm-package"
-                        class="main-btn mb-2"
-                        style="text-decoration: none"
-                        target="_blank"
-                        ><span
-                          style="
-                            text-decoration: underline;
-                            text-underline-offset: 4px;
-                          "
-                          >NPM</span
-                        >
-                        <i class="fa-brands fa-npm" style="color: red"></i
                       ></a>
                     </div>
                   </div>
@@ -1127,6 +953,13 @@
                     ><img
                       src="./Images/Skills Logo/GitHub.png"
                       alt="GitHub"
+                      height="60"
+                      class="mx-2 social-logo"
+                  /></a>
+                  <a href="https://mohitjaiswal28.medium.com/" target="_blank"
+                    ><img
+                      src="./Images/Skills Logo/Medium.png"
+                      alt="Medium"
                       height="60"
                       class="mx-2 social-logo"
                   /></a>
